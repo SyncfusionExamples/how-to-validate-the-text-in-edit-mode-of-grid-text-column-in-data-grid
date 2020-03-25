@@ -1,0 +1,27 @@
+﻿<Window x:Class="SfDataGridDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:local="clr-namespace:SfDataGridDemo"
+        xmlns:interact="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        Title="SfDataGrid Demo"
+        Width="724"
+        Height="610"
+        Icon="App.ico"
+        WindowStartupLocation="CenterScreen">
+    
+    <Window.DataContext>
+        <local:ViewModel/>      
+    </Window.DataContext>
+    
+    <Grid >        
+        <syncfusion:SfDataGrid x:Name="sfdatagrid" ItemsSource="{Binding Path=EmployeeDetails}" AllowEditing="True"  HorizontalAlignment="Center" VerticalAlignment="Center" AutoGenerateColumns="False" >
+            <syncfusion:SfDataGrid.Columns>
+                <syncfusion:GridTextColumn MappingName="EmployeeId" />
+                <syncfusion:GridTextColumn MappingName="EmployeeName"/>
+                <syncfusion:GridTextColumn MappingName="MailId"/>
+                <syncfusion:GridTextColumn MappingName="City" />                
+            </syncfusion:SfDataGrid.Columns>
+        </syncfusion:SfDataGrid>        
+    </Grid>
+</Window>
