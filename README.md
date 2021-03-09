@@ -1,9 +1,10 @@
 # How to validate the text in edit mode of GridTextColumn in DataGrid(SfDataGrid)?	
 
 ## About the sample
-This example illustrates how to validate the text in edit mode of GridTextColumn in DataGrid(SfDataGrid)?
 
-By default, SfDataGrid does not provide the direct support for validating the text in edit mode in GridTextBoxColumn. You can achieve this by customizing the GridCellTextBoxRenderer class. In this class you can get the old value and new value from KeyDown and KeyUp events.
+This example illustrates how to validate the text in edit mode of GridTextColumn in [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid)?
+
+[WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid) does not provide the direct support for validating the text in edit mode in [GridTextBoxColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTextColumn.html). You can achieve this by customizing the [GridCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridCellTextBoxRenderer.html) class. In this class you can get the old value and new value from `KeyDown` and `KeyUp` events.
 
 ```C#
 public class GridCellTextBoxRendererExt : GridCellTextBoxRenderer
