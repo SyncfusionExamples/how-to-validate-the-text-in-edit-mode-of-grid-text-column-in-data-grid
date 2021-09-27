@@ -38,5 +38,7 @@ public class GridCellTextBoxRendererExt : GridCellTextBoxRenderer
 } 
 ```
 
+KB article - [How to validate the text in edit mode of GridTextColumn in DataGrid(SfDataGrid)?](https://www.syncfusion.com/kb/11278/how-to-validate-the-text-in-edit-mode-of-gridtextcolumn-in-wpf-datagrid-sfdatagrid)
+
 ## Requirements to run the demo
 Visual Studio 2015 and above versions
